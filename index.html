@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="Album_Spotify/Spotify_icon.png">
+    <link rel="stylesheet" href="Spotify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify - Web Player: Music for...</title>
+</head>
+<body>
+    <div class="spotify">
+        <!---  LEFT SECTION  --->
+        <div class="left-section">
+
+            <!-- UPPER -->
+            <div class="left-upper">
+                <!-- lu-btn => left upper button -->
+                <div class="home-btn" id="lu-btn"><a href=""><img src="Icons/house.png" alt=""><p>Home</p></a></div>
+                <div class="search-btn" id="lu-btn"><a href="https://open.spotify.com/search"><img src="Icons/search.png" alt=""><p>Search</p></a></div>
+            </div>
+
+            <!-- LOWER -->
+            <div class="left-lower">
+                <div class="left-nav">
+                    <div></div>
+                    <div class="library-btn" id="lu-btn"><a href=""><img src="Icons/library_icon.png" alt=""><p>Your Library</p></a></div>
+                    <a href=""><i id="ni" class="fas fa-plus"></i></a>
+                    <a href=""><i id="ni" class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="option-row1">
+                    <div id="nav_op"><a href="#">Playlists</a></div>
+                    <div id="nav_op"><a href="#">Artists</a></div>
+                    <div id="nav_op"><a href="#">Albums</a></div>
+                </div>
+                <div class="option-row2">
+                    <a class="search_img-btn" href="#"><img src="Icons/search.png" alt=""></a>
+                    <div class="recent-btn"><a href="">Recents<div class="menu_img"><img src="Icons/menu_icon.png" alt=""></div></a></div>
+                </div>
+
+                <div class="left-playlist">
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/Liked_songs.jpeg" alt=""> <h4>Liked Songs</h4> <p>Playlist • 38 songs</p></a>
+                    </div>
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/Discover_Weekly.jpg" alt=""> <h4>Discover Weekly</h4> <p>Playlist</p></a>
+                    </div>
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/DM1.jpg" alt=""> <h4>Daily Mix 1</h4> <p>Playlist</p></a>
+                    </div>
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/DM2.jpg" alt=""> <h4>Daily Mix 2</h4> <p>Playlist</p></a>
+                    </div>
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/DM3.jpg" alt=""> <h4>Daily Mix 3</h4> <p>Playlist</p></a>
+                    </div>
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/DM 4.jpg" alt=""> <h4>Daily Mix 4</h4> <p>Playlist</p></a>
+                    </div>
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/DM6.jpg" alt=""> <h4>Daily Mix 6</h4> <p>Playlist</p></a>
+                    </div>
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/hindi_mix.png" alt=""> <h4>Hindi Mix</h4> <p>Playlist</p></a>
+                    </div>
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/illenium.jpg" alt=""> <h4>This is Illenium</h4> <p>Playlist</p></a>
+                    </div>
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/Marshmello.jpg" alt=""> <h4>This is Marshmello</h4> <p>Playlist</p></a>
+                    </div>
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/AlanWalker.jpg" alt=""> <h4>This is Alan Walker</h4> <p>Playlist</p></a>
+                    </div>
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/avicii.jpg" alt=""> <h4>This is Avicii</h4> <p>Playlist</p></a>
+                    </div>
+                    <div class="left-list" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                        <img src="Album_Spotify/pop_mix.jpg" alt=""> <h4>pop Mix</h4> <p>Playlist</p></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!-- RIGHT SEction -->
+        <div class="right-section">
+
+            <!-- Navbar -->
+            <div id="navbar">
+                <div class="right-nav"> 
+                    <a href="#" class="arrow"><i class="fas fa-angle-left"></i></a>
+                    <a href="#" class="arrow"><i class="fas fa-angle-right"></i></a>
+                    <div class="right-upperbtn">
+                        <div class="explore"><a href="">Explore Premium</a></div>
+                        <div class="install"><a href=""><i class="fas fa-circle-arrow-down"></i>Install App</a></div>
+                        <a class="bell"><i class="fas fa-bell"></i></a>
+                        <a href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2F" class="profile-icon"><i class="fas fa-user"></i></a>
+                    </div><div></div>
+                </div>
+                <div class="option-row">
+                    <div id="nav_op"><a href="#">All</a></div>
+                    <div id="nav_op"><a href="#">Music</a></div>
+                    <div id="nav_op"><a href="#">Podcasts</a></div>
+                </div>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlists">
+                <div class="playlist" id="box1"><a href="https://open.spotify.com/collection/tracks">
+                    <img src="Album_Spotify/Liked_songs.jpeg" alt=""> Liked Songs</a>
+                </div>
+                <div class="playlist" id="box2"><a href="https://open.spotify.com/playlist/37i9dQZEVXcRoQdWOkueA5">
+                    <img src="Album_Spotify/Discover_Weekly.jpg" alt=""> Discover Weekly</a>
+                </div>
+                <div class="playlist" id="box3"><a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO4rvWRa">
+                    <img src="Album_Spotify/AlanWalker.jpg" alt=""> This is Alan Walker</a>
+                </div>
+                <div class="playlist" id="box4"><a href="https://open.spotify.com/playlist/37i9dQZF1E356dGqR6LTib">
+                    <img src="Album_Spotify/DM 4.jpg" alt=""> Moody Mix</a>
+                </div>
+                <div class="playlist" id="box5"><a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO3Adu8w">
+                    <img src="Album_Spotify/Marshmello.jpg" alt=""> This is Marshmello</a>
+                </div>
+                <div class="playlist" id="box6"><a href="https://open.spotify.com/playlist/37i9dQZF1E38tUBZFLtdIS">
+                    <img src="Album_Spotify/DM2.jpg" alt=""> Daily MIx 2</a>
+                </div>
+                <div class="playlist" id="box7"><a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2drcgU">
+                    <img src="Album_Spotify/sick.jpg" alt=""> Daily Mix 3</a>
+                </div>
+                <div class="playlist" id="box8"><a href="https://open.spotify.com/playlist/37i9dQZF1E36pscxtembbY">
+                    <img src="Album_Spotify/DM32.jpg" alt=""> Daily Mix 5</a>
+                </div>
+
+                <!-- ALBUMS =============================== -->
+
+                <div class="lists">
+                    <div class="list-head" id="album-head1">
+                        <h3>Made for You</h3>
+                    </div>
+                    
+                    <div class="album-list1">
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/DM1.jpg" alt="">
+                            <h4>Daily Mix 1</h4>
+                            <p>Darshan Raval, Aditya Rikhari, Emiway Bant...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/DM2.jpg" alt="">
+                            <h4>Daily Mix 2</h4>
+                            <p>Donny Duardo, Yoe, VERSANO and more</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/DM3.jpg" alt="">
+                            <h4>Daily Mix 3</h4>
+                            <p>Vismay Patel, Dream Note, Anuv Jain and...</p>
+                        </div>   
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/Release_radar.jpg" alt="">
+                            <h4>Release Radar</h4>
+                            <p>Catch all the latest music from the artist yo...</p>
+                        </div>    
+                    </div>
+
+                    <div class="list-head">
+                        <h3>Best of Artists</h3>
+                        <a href="">Show all</a>
+                    </div>
+                    <div class="album-list1">
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/chainsmokers.jpg" alt="">
+                            <h4>This is The...</h4>
+                            <p>This is The Chainsmokers... The...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/AlanWalker.jpg" alt="">
+                            <h4>This is Alan Walker</h4>
+                            <p>This is Alan Walker. The essential tracks, ...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/Marshmello.jpg" alt="">
+                            <h4>This is Marshmello</h4>
+                            <p>This is Marshmello. The essential tracks, ...</p>
+                        </div>   
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/Jonas.jpg" alt="">
+                            <h4>This is jonas Blue</h4>
+                            <p>This is jonas Blue. The essential tracks, all in...</p>
+                        </div>      
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/Mike_perry.jpg" alt="">
+                            <h4>This is Mike Perry</h4>
+                            <p>This is Mike Perry. The essential tracks, all in...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/shawn_mendes.jpg" alt="">
+                            <h4>This is Shawn...</h4>
+                            <p>This is Shawn Mendes. The essential tracks, ...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/avicii.jpg" alt="">
+                            <h4>This is Avicii</h4>
+                            <p>This is Avicii. The essential track, all in...</p>
+                        </div>      
+                    </div>
+
+                    <div class="list-head">
+                        <h3>Your top mixes</h3>
+                    </div>
+                    <div class="album-list1">
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/hindi_mix.png" alt="">
+                            <h4>Hindi Mix</h4>
+                            <p>AUR, Mitraz, Vishal Mishra and more</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/pop_mix.jpg" alt="">
+                            <h4>Pop Mix</h4>
+                            <p>Julia Michaels, Alan Walker, SHAED and more</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/moody.jpg" alt="">
+                            <h4>Moody Mix</h4>
+                            <p>K 4 King, Combee Prod, Alex & Sierra and more</p>
+                        </div>   
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/rauf.jpg" alt="">
+                            <h4>Rauf & Faik Mix</h4>
+                            <p>JONY, EMIN and MOT</p>
+                        </div>
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/donny_duardo.jpg" alt="">
+                            <h4>Donny Duardo Mix</h4>
+                            <p>WhySoSerious, Smitmeister and Sico Vox</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/romantic.jpg" alt="">
+                            <h4>Romantic Mix</h4>
+                            <p>Elvis Drew, Barney Sku, Anuv Jain and more</p>
+                        </div>      
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/dancehall.jpg" alt="">
+                            <h4>Dancehall Mix</h4>
+                            <p>nafthaly Ramona, Smitmeisq, onderkoff...</p>
+                        </div>      
+                    </div>
+
+                    <div class="list-head">
+                        <h3>Best of Artists</h3>
+                        <a href="">Show all</a>
+                    </div>
+                    <div class="album-list1">
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/chainsmokers.jpg" alt="">
+                            <h4>This is The...</h4>
+                            <p>This is The Chainsmokers... The...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/AlanWalker.jpg" alt="">
+                            <h4>This is Alan Walker</h4>
+                            <p>This is Alan Walker. The essential tracks, ...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/Marshmello.jpg" alt="">
+                            <h4>This is Marshmello</h4>
+                            <p>This is Marshmello. The essential tracks, ...</p>
+                        </div>   
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/Jonas.jpg" alt="">
+                            <h4>This is jonas Blue</h4>
+                            <p>This is jonas Blue. The essential tracks, all in...</p>
+                        </div>      
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/Mike_perry.jpg" alt="">
+                            <h4>This is Mike Perry</h4>
+                            <p>This is Mike Perry. The essential tracks, all in...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/shawn_mendes.jpg" alt="">
+                            <h4>This is Shawn...</h4>
+                            <p>This is Shawn Mendes. The essential tracks, ...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/avicii.jpg" alt="">
+                            <h4>This is Avicii</h4>
+                            <p>This is Avicii. The essential track, all in...</p>
+                        </div>      
+                    </div>
+
+                    <div class="list-head">
+                        <h3>Your top mixes</h3>
+                    </div>
+                    <div class="album-list1">
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/hindi_mix.png" alt="">
+                            <h4>Hindi Mix</h4>
+                            <p>AUR, Mitraz, Vishal Mishra and more</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/pop_mix.jpg" alt="">
+                            <h4>Pop Mix</h4>
+                            <p>Julia Michaels, Alan Walker, SHAED and more</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/moody.jpg" alt="">
+                            <h4>Moody Mix</h4>
+                            <p>K 4 King, Combee Prod, Alex & Sierra and more</p>
+                        </div>   
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/rauf.jpg" alt="">
+                            <h4>Rauf & Faik Mix</h4>
+                            <p>JONY, EMIN and MOT</p>
+                        </div>
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/donny_duardo.jpg" alt="">
+                            <h4>Donny Duardo Mix</h4>
+                            <p>WhySoSerious, Smitmeister and Sico Vox</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/romantic.jpg" alt="">
+                            <h4>Romantic Mix</h4>
+                            <p>Elvis Drew, Barney Sku, Anuv Jain and more</p>
+                        </div>      
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/dancehall.jpg" alt="">
+                            <h4>Dancehall Mix</h4>
+                            <p>nafthaly Ramona, Smitmeisq, onderkoff...</p>
+                        </div>      
+                    </div>
+                    
+
+                    <div class="list-head">
+                        <h3>Best of Artists</h3>
+                        <a href="">Show all</a>
+                    </div>
+                    <div class="album-list1">
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/chainsmokers.jpg" alt="">
+                            <h4>This is The...</h4>
+                            <p>This is The Chainsmokers... The...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/AlanWalker.jpg" alt="">
+                            <h4>This is Alan Walker</h4>
+                            <p>This is Alan Walker. The essential tracks, ...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/Marshmello.jpg" alt="">
+                            <h4>This is Marshmello</h4>
+                            <p>This is Marshmello. The essential tracks, ...</p>
+                        </div>   
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/Jonas.jpg" alt="">
+                            <h4>This is jonas Blue</h4>
+                            <p>This is jonas Blue. The essential tracks, all in...</p>
+                        </div>      
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/Mike_perry.jpg" alt="">
+                            <h4>This is Mike Perry</h4>
+                            <p>This is Mike Perry. The essential tracks, all in...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/shawn_mendes.jpg" alt="">
+                            <h4>This is Shawn...</h4>
+                            <p>This is Shawn Mendes. The essential tracks, ...</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/avicii.jpg" alt="">
+                            <h4>This is Avicii</h4>
+                            <p>This is Avicii. The essential track, all in...</p>
+                        </div>      
+                    </div>
+
+                    <div class="list-head">
+                        <h3>Your top mixes</h3>
+                    </div>
+                    <div class="album-list1">
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/hindi_mix.png" alt="">
+                            <h4>Hindi Mix</h4>
+                            <p>AUR, Mitraz, Vishal Mishra and more</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/pop_mix.jpg" alt="">
+                            <h4>Pop Mix</h4>
+                            <p>Julia Michaels, Alan Walker, SHAED and more</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/moody.jpg" alt="">
+                            <h4>Moody Mix</h4>
+                            <p>K 4 King, Combee Prod, Alex & Sierra and more</p>
+                        </div>   
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/rauf.jpg" alt="">
+                            <h4>Rauf & Faik Mix</h4>
+                            <p>JONY, EMIN and MOT</p>
+                        </div>
+                        <div class="album" id="album1">
+                            <img src="Album_Spotify/donny_duardo.jpg" alt="">
+                            <h4>Donny Duardo Mix</h4>
+                            <p>WhySoSerious, Smitmeister and Sico Vox</p>
+                        </div>
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/romantic.jpg" alt="">
+                            <h4>Romantic Mix</h4>
+                            <p>Elvis Drew, Barney Sku, Anuv Jain and more</p>
+                        </div>      
+                        <div class="album" id="album2">
+                            <img src="Album_Spotify/dancehall.jpg" alt="">
+                            <h4>Dancehall Mix</h4>
+                            <p>nafthaly Ramona, Smitmeisq, onderkoff...</p>
+                        </div>      
+                    </div>
+                
+                </div>
+
+                
+
+                <div class="footer">
+                    <div class="container1">
+                        <div class="coloumn" id="C1">
+                            <p class="c-head">Company</p>
+                            <a href="#"  class="c-item">About</a>
+                            <a href="#"  class="c-item">Jobs</a>
+                            <a href="#"  class="c-item">For the Record</a>
+                        </div>
+                        <div class="coloumn" id="C2">
+                            <p class="c-head">Communities</p>
+                            <a href="#"  class="c-item">For Artists</a>
+                            <a href="#"  class="c-item">Developers</a>
+                            <a href="#"  class="c-item">Advertising</a>
+                            <a href="#"  class="c-item">Investors</a>
+                            <a href="#"  class="c-item">vendors</a>
+                        </div>
+                        <div class="coloumn" id="C3">
+                            <p class="c-head">Useful Links</p>
+                            <a href="#"  class="c-item">Support</a>
+                            <a href="#"  class="c-item">Free Mobile App</a>
+                        </div>
+                        <div class="icons">
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="line"></div>
+
+                    <div class="container2">
+                        <div class="a">
+                            <a>Legal</a>
+                            <a>Safety & arivacy Center</a>
+                            <a>Privacy aolicy</a>
+                            <a>Cookies</a>
+                            <a>About Ads</a>
+                            <a>Accessibility</a>
+                        </div>
+                        <div></div>
+                        <p>© 2024 Spotify Adishwar</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
